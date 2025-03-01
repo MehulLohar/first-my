@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="basic.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Our Hotel</h1>
+            <p>Book your stay and enjoy a luxury experience.</p>
+        </div>
+    </section>
+    <div class="image-container">
+        <img src="1.jpg" alt="Image 1">
+        <img src="2.jpg" alt="Image 2">
+        <img src="3.jpg" alt="Image 3">
+    </div>
+
+    <section class="booking">
+        <h2>Book Your Stay</h2>
+        <form id="bookingForm">
+            <label for="checkin">Check-in:</label>
+            <input type="date" id="checkin" name="checkin" required>
+
+            <label for="checkout">Check-out:</label>
+            <input type="date" id="checkout" name="checkout" required>
+
+            <label for="roomType">Room Type:</label>
+            <select id="roomType" name="roomType">
+                <option value="single">Single Room</option>
+                <option value="double">Double Room</option>
+                <option value="suite">Suite</option>
+            </select>
+
+            <button type="submit" class="btn btn-book">Book Now</button>
+            <button type="reset" class="btn btn-cancel">Cancel</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Hotel Booking. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
